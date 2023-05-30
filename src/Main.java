@@ -27,12 +27,20 @@ public class Main {
     }
 
     public static int min(int c, int m, int y) {
-        if (c < m && c < y) {
+        if (c <= m && c <= y) {
             return c;
-        } else if (m < c && m < y) {
+        } else if (m <= c && m <= y) {
             return m;
         } else {
             return y;
+        }
+    }
+
+    public static int negative(int x) {
+        if(x < 0) {
+            return 0;
+        } else {
+            return x;
         }
     }
 }
